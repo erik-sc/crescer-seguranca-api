@@ -11,6 +11,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +27,14 @@ public class Usuario {
 
     private String nome;
     private String email;
+
+    private String telefone;
+
+    private String foto;
+
+    private LocalDateTime criadoEm;
+
+    private LocalDateTime atualizadoEm;
     private String senha;
     private boolean ativo;
 

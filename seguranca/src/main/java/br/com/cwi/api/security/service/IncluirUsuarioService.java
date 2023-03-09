@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
+
 import static br.com.cwi.api.security.mapper.UsuarioMapper.toEntity;
 import static br.com.cwi.api.security.mapper.UsuarioMapper.toResponse;
 
@@ -25,6 +27,7 @@ public class IncluirUsuarioService {
 
         Usuario usuario = toEntity(request);
         usuario.setSenha(passwordEncoder.encode(request.getSenha()));
+        usuario.setCriadoEm(LocalDateTime.now());
         usuario.setAtivo(true);
 
         request.getPermissoes()
