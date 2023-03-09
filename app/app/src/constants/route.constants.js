@@ -1,0 +1,5 @@
+export const LOGIN_PATH = "/"
+export const CADASTRO_PATH = "register"
+export const HOME_PATH = "/home"
+export const DETALHE_USUARIO_PATH = "/usuario/:id"
+export const DETALHE_USUARIO_PATH_SEM_PARAM = "/usuario/"

@@ -1,0 +1,19 @@
+.usuario-card__container {
+    border: 1px solid rgba(0, 0, 0, 0.132);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.usuario-card-botao__adicionar {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(115, 192, 115);
+    color: #fff;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}

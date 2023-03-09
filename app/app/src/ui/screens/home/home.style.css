@@ -1,0 +1,22 @@
+.home-screen__column {
+    background-image: linear-gradient(to bottom, #ffecd2 0%, #ffd0c0 100%);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 5px 0 rgba(128, 128, 128, 0.207);
+    margin-right: 100px;
+}
+
+.home-screen__center-content {
+    width: 50%;
+}
+
+.logout-button {
+    background-color: transparent;
+    border: none;
+    font-family: 'Karla', sans-serif;
+    cursor: pointer;
+}
