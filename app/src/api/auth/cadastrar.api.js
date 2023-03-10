@@ -1,16 +1,15 @@
 import { axiosInstance } from "../base/axios-instance.api";
 import { USUARIOS_URL } from "../../constants/api.constants";
 
-export async function cadastrar({ nomeCompleto, apelido, dataNascimento, email, senha, imagemPerfil }) {
+export async function cadastrar({ nome, email, telefone, senha, permissoes }) {
     const response = await axiosInstance.post(
         USUARIOS_URL,
         {
-            nomeCompleto,
-            apelido,
-            dataNascimento,
+            nome,
             email,
+            telefone,
             senha,
-            imagemPerfil
+            permissoes
         }
     )
     return response.data

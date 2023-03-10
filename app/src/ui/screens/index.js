@@ -1,3 +1,5 @@
 export { HomeScreen } from "./home/home.screen"
 export { LoginScreen } from "./login/login.screen"
 export { CadastroScreen } from "./cadastro/cadastro.screen"
+export { SolicitarSenha } from "./solicitar-senha/solicitar-senha.screen"
+export { RedefinirSenha } from "./redefinir-senha/redefinir-senha.screen"

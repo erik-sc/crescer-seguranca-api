@@ -19,6 +19,9 @@ public class UsuarioRequest {
     private String email;
 
     @NotBlank
+    private String telefone;
+
+    @NotBlank
     private String senha;
 
     @NotNull @NotEmpty

@@ -28,6 +28,8 @@ public class SecurityConfig {
                 .and()
                     .authorizeRequests().antMatchers("/*/**/publico").permitAll()
                 .and()
+                    .authorizeRequests().antMatchers("/redefinir").permitAll()
+                .and()
                     .authorizeRequests().antMatchers(POST, "/usuarios").permitAll()
                 .and()
                     .authorizeRequests().anyRequest().authenticated()

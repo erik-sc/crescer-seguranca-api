@@ -15,6 +15,7 @@ public class UsuarioMapper {
         Usuario entity = new Usuario();
         entity.setNome(request.getNome());
         entity.setEmail(request.getEmail());
+        entity.setTelefone(request.getTelefone());
         return entity;
     }
 

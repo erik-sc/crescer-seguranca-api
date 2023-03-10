@@ -1,5 +1,7 @@
 import "./login.style.css"
 import { useHandleLogin } from "../../../hooks/auth/use-handle-login.hook";
+import { Link } from "react-router-dom";
+import { CADASTRO_PATH, SOLICITAR_SENHA_PATH } from "../../../constants/route.constants";
 
 export function LoginScreen() {
     const { handleSubmit, handleChange, loginInput, inputError } =
@@ -26,6 +28,8 @@ export function LoginScreen() {
                         />
                     {inputError ? <p className="login-error">{inputError}</p>:null}
                     <button className="login-button">logar</button>
+                    <Link to={CADASTRO_PATH}>Cadastrar</Link>
+                    <Link to={SOLICITAR_SENHA_PATH}>Esqueci minha senha</Link>
                 </form>
             </div>
         </div>
